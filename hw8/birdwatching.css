@@ -146,6 +146,8 @@ footer {
 
 main {
   flex: 3;
+  display: flex;
+  flex-direction: row;
 }
 
 .flex-container {
@@ -153,5 +155,6 @@ main {
   padding: 1%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
