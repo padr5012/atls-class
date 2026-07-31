@@ -1,0 +1,26 @@
+body {
+  color: dimgray;
+}
+
+h1, h2, strong {
+  color: purple;
+}
+
+ul {
+  border: 6px solid cornflowerblue;
+  list-style-type: square;
+}
+
+ol {
+  border: 6px solid purple;
+}
+
+ol, ul {
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+dt {
+  color: purple;
+  font-style: italic;
+}
