@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+
+/* form styling */
+
+
+#wrapper {
+	width: 60%;
+	margin-left:4%;
+}
+
+div#formcol1 {
+	float:left;	
+	width: 100%;
+}
+
+
+label {
+	text-align: right;
+	margin-right: .3em;
+	width: 6.3em;  /* I made this deliberately wide – come up with your own optimal width */
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+}
+
+
+/* https://stackoverflow.com/questions/8904836/how-can-i-insert-text-before-an-item-with-css */
+/* https://stackoverflow.com/questions/8904836/how-can-i-insert-text-before-an-item-with-css */
+
+label:has(+ .reqfield)::before {
+	content: "* "; 
+}
+
+
+#radios {
+	margin: 10px
+}
+
+#radios label {
+	width: auto;
+}
+
+select:focus, select:active, input:focus, input:active, input:focus + label, input:active + label, label[for]:focus, label[for]:active {
+	color: #FFF !important;
+	background-color: royalblue!important;
+}
+
+#formcol1 input.reqfield {
+	background:#FF9;
+}
+/* we place the id formcol1 in front of the li element in order to limit this formatting to the top part of the form */
+
+#formcol1 li {   
+	list-style:none;
+	padding: 4px;
+}
+
+/* end of form css */
+	
